@@ -32,7 +32,9 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
-                    <compilerArguments>
+                    <compilerArguments> 
+                        <arg>--add-opens</arg>
+                        <arg>java.base/java.util=ALL-UNNAMED</arg>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
                 </configuration>
